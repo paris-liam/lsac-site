@@ -1,0 +1,17 @@
+.header-container {
+    margin: 5vh;
+}
+
+.header-title-image-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.header-link-container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 80%;
+    margin: auto;
+}
