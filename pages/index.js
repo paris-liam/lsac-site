@@ -2,7 +2,7 @@ import { createClient } from 'contentful'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-
+import dynamic from 'next/dynamic';
 export async function getStaticProps() {
   const client = createClient({
     space: process.env.CONTENTFUL_SPACE_ID,
@@ -18,6 +18,10 @@ export async function getStaticProps() {
   }
 }
 
+const DynamicComponentWithNoSSR = dynamic(
+  () => import('../components/TwitchSection'),
+  { ssr: false }
+)
 export default function Home({dateOfStream}) {
   console.warn(dateOfStream);
   return (
@@ -29,7 +33,8 @@ export default function Home({dateOfStream}) {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
+        <DynamicComponentWithNoSSR></DynamicComponentWithNoSSR>
+ <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
 
@@ -81,6 +86,7 @@ export default function Home({dateOfStream}) {
           </span>
         </a>
       </footer>
+      <script src="https://embed.twitch.tv/embed/v1.js"></script>
     </div>
   )
 }
