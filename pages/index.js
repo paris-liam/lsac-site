@@ -86,7 +86,6 @@ export default function Home({dateOfStream}) {
           </span>
         </a>
       </footer>
-      <script src="https://embed.twitch.tv/embed/v1.js"></script>
     </div>
   )
 }

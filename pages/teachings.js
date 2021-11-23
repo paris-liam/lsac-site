@@ -27,7 +27,7 @@ export default function Teachings({sections}) {
             console.warn(body);
 
             return (
-              <div className="teaching">
+              <div key={title} className="teaching">
               <h2>{title}</h2>
               <div dangerouslySetInnerHTML={{__html:documentToHtmlString(body)}}></div>
               </div>
