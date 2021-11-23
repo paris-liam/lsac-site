@@ -17,7 +17,6 @@ export async function getStaticProps() {
   }
 
 export default function Teachings({sections}) {
-    console.warn(sections);
       return (
       <div className='teachings-container'>
           {

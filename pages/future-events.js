@@ -16,7 +16,6 @@ export async function getStaticProps() {
   }
 
 export default function Events({events}) {
-    console.warn(events);
     return (
         <h1>Events</h1>
     );
