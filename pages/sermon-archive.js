@@ -11,7 +11,7 @@ export async function getServerSideProps() {
 }
 export default function Archive({videos}) {
   return (<div><h1>Videos</h1>
-    {videos.items.map((video) => {
+    <ul className="video-list">{videos.items.map((video) => {
       const { id, snippet = {} } = video;
       const { title, thumbnails = {}, resourceId } = snippet;
       const { medium = {} } = thumbnails;
@@ -21,6 +21,6 @@ export default function Archive({videos}) {
           <h3>{title}</h3></a>
         </li>
       )
-    })}
+    })}</ul>
   </div>)
 }

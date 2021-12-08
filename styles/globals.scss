@@ -4,7 +4,7 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  background: greenyellow;
+  background-image: url('../public/Background.png');
 }
 
 a {
@@ -15,5 +15,23 @@ a {
 * {
   box-sizing: border-box;
 }
+.siteby {
+  display: block;
+  width: 100%;
+  text-align: right;
+  margin-top: 3vh;
+  padding-right: 3vw;
 
+  a {
+    color: blue;
+    text-decoration: underline;
+  }
+}
+
+main {
+  max-width: 80%;
+  min-height: 70vh;
+  margin: auto;
+}
 @import 'header.scss';
+@import 'archive.scss';

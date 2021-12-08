@@ -1,0 +1,33 @@
+.video-list {
+    display: flex;
+    padding: 0;
+    flex-flow: column nowrap;
+    list-style: none;
+    justify-content: center;
+    background-color: grey;
+    border-radius: 0rem;
+    padding-top:  2rem;
+}
+
+.video-card {
+    margin: auto;
+}
+
+@media screen and (min-width: 800px) {
+    .video-list {
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        margin: auto;
+    }
+    .video-card {
+        width: 320px;
+        margin-right: 5rem;
+        margin-bottom: 2rem;
+        a > img {
+            width: auto;
+        }
+        h3 {
+            font-size: 12px;
+        }
+    }
+}
