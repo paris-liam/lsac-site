@@ -15,7 +15,6 @@ export const processSortAndRemove = (eventItems) => {
         link: eventLink
       }
   });
-  console.warn(formatted);
   return formatted.sort((a,b) => a.time > b.time).filter((event) => {
     return event.time >= new Date();
   });
