@@ -10,5 +10,5 @@ export default function TwitchSection() {
     width="100%"
   />
   <div style={{'height': '5vh', width: '100%'}}></div>
-  <TwitchChat channel="letsstartacultonline" id="twitch-chat" height="100%" width="100%" theme="dark" /></div>)
+  <TwitchChat channel="letsstartacultonline" id="twitch-chat" height="250vh" width="100%" theme="dark" /></div>)
 }

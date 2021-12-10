@@ -1,0 +1,46 @@
+.event-list {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0,0,0,.45);
+    border-radius: 1rem;
+    padding-left: 0;
+    list-style: none;
+
+    li {
+        border-bottom: 1px dashed black;
+    }
+}
+
+.event-tile {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 1rem;
+    img {
+        max-width: 150px;
+        margin: auto;
+    }
+
+    h3 {
+        color: black;
+        &.event-time {
+            background-color: black;
+            color: lime;
+        }
+    }
+
+    &:last-of-type {
+        border-bottom: none;
+    }
+}
+
+.info-box {
+    margin-left: 2rem;
+}
+
+@media screen and (min-width: 800px) {
+    .event-tile {
+        img {
+            margin: 0;
+        }
+    }
+}

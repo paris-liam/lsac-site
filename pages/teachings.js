@@ -22,8 +22,6 @@ export default function Teachings({sections}) {
           {
             sections.map((section) => {
             const { title, body } = section.fields;
-            console.warn(title);
-            console.warn(body);
 
             return (
               <div key={title} className="teaching">
