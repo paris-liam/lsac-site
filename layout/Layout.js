@@ -18,6 +18,6 @@ export default function Layout ({children}) {
     <main>
     {children}
     </main>
-    <div className="siteby"><sub>site made by <a href="https://twitter.com/liam_paris">Liam Paris</a></sub></div>
+    <div className="siteby"><sub>site made by <a href="https://twitter.com/liam_paris">Liam Paris</a></sub><sub> "Let's Start a Cult" graphic by <a href="https://www.instagram.com/boy__ocean/">Andrew Shearer</a></sub></div>
     </>)
 }

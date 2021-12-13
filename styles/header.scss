@@ -21,4 +21,11 @@
     margin: auto;
     width: 100%;
     max-width: 900px;
+
+    a {
+        font-size: 1.5rem;
+        &:hover {
+            filter: drop-shadow(15px 10px 5px #7f1e4b);
+        }
+    }
 }
