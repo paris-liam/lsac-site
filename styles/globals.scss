@@ -38,13 +38,18 @@ h1 {
   font-size: clamp(1.5rem, 4vw, 3rem);
 }
 h2 {
-  font-size: clamp(1.25rem, 4vw, 2.25rem)
+  font-size: clamp(1rem, 4vw, 2.25rem)
 }
 h3{ 
   font-size: clamp(1rem, 4vw, 2rem);
 }
 p {
   font-size: clamp(.5rem, 4vw, 1.25rem);
+}
+
+sub {
+  font-size: clamp(.25rem, 2vw, 1rem);
+  padding-bottom: 10px;
 }
 @import 'header.scss';
 @import 'archive.scss';
