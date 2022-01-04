@@ -1,7 +1,7 @@
 
 export async function getServerSideProps() {
   const YOUTUBE_PLAYLIST_ITEMS_API = 'https://www.googleapis.com/youtube/v3/playlistItems';
-  const res = await fetch(`${YOUTUBE_PLAYLIST_ITEMS_API}?part=snippet&maxResults=50&playlistId=PLwn7IWrlHG-0JTMkV1JcTyt0lILaUfwr2&key=${process.env.YOUTUBE_API_KEY}`);  
+  const res = await fetch(`${YOUTUBE_PLAYLIST_ITEMS_API}?part=snippet&maxResults=50&playlistId=PLHHNR67MyBfvmClcqVaWJ3lUEVde2Qv6W&key=${process.env.YOUTUBE_API_KEY}`);  
   const data = await res.json();
   return {
     props: {
@@ -21,6 +21,7 @@ export default function Archive({videos}) {
           <h3>{title}</h3></a>
         </li>
       )
-    })}</ul>
+    })}
+    </ul>
   </div>)
 }
